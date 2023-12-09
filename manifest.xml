@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<updates>
+	<update>
+		<name>ADALinker</name>
+		<description>A Joomla plugin that searches content for ADA keyword and replaces the pattern of the decision with its link to Diavgeia</description>
+		<element>plg_adalinker</element>
+		<type>plugin</type>
+		<version>1.0</version>
+		<client>administrator</client>
+		<infourl title="ADALinker">https://github.com/rinenweb/plg_content_adalinker/releases/tag/v1.0</infourl>
+		<downloads>
+			<downloadurl type="full" format="zip">https://github.com/rinenweb/plg_content_adalinker/releases/download/v1.0/plg_adalinker.zip</downloadurl>
+		</downloads>
+		<targetplatform name="joomla" version="(3\.([89]|10)|4\.[01234]|5\.0)" />
+	</update>
+</updates>
