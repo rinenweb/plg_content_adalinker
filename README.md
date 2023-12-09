@@ -15,6 +15,7 @@
 
 # Λειτουργία
 Το Plugin αναζητά σε όλο το περιεχόμενο του ιστοτόπου (δηλαδή κείμενο σε Άρθρα, Κατηγορίες, Tags κ.λπ.) τη λέξη-κλειδί 'ΑΔΑ:', διαβάζει το μοτίβο της πράξης που ακολουθεί (π.χ. Α1Β2Γ3Δ4-Ε5Ζ) και το μετατρέπει σε σύνδεσμο προς τη σελίδα αυτής της πράξης στη Δι@ύγεια, δηλαδή στο url https://diavgeia.gov.gr/decision/view/Α1Β2Γ3Δ4-Ε5Ζ.
+
 **Προσοχή:** Το μοτίβο που αναζητείται είναι απόλυτα συγκεκριμένο, δηλ. "ΑΔΑ:" που ακολουθείται από κενό χαρακτήρα και τον αριθμό της πράξης. Μπορεί επίσης να είναι εντός παρένθεσης "(ΑΔΑ: Α1Β2Γ3Δ4-Ε5Ζ)". Οποιοσδήποτε άλλος τρόπος μπορεί να μην λειτουργήσει. Για παράδειγμα, αν στο κείμενο υπάρχει οποιαδήποτε διαφοροποίηση ως προς τη λέξη-κλειδί "ΑΔΑ:", όπως "ΑΔΑ" ή "Α.Δ.Α." κ.λπ., ο αριθμός απόφασης που ακολουθεί **δεν** θα διαβαστεί σωστά.
 
 # Άδεια χρήσης και αποποίηση ευθύνης
@@ -31,6 +32,7 @@ The Plugin is installed like any other extension. After installation, it needs t
 
 # Usage
 The Plugin searches all website content (i.e. text in Articles, Categories, Tags, etc.) for the keyword 'ADA:', reads the following decision pattern (eg A1B2C3D4-E5Z) and turns it into a link to the page of this decision in Diavgeia, i.e. to the url https://diavgeia.gov.gr/decision/view/Α1Β2Γ3Δ4-Ε5Ζ.
+
 **Caution:** The pattern searched for is very specific, i.e. "ΑΔΑ:" followed by a blank character and the decision number. It can also be in parentheses "(AD: A1B2C3D4-E5Z)". Any other way may not work. For example, if the text contains any variation on the keyword "ΑΔΑ:", such as "ADA" or "A.D.A." etc., the decision number that follows will **not** be read correctly.
 
 # License and Disclaimer
