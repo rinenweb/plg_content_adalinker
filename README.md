@@ -30,7 +30,7 @@
 # description
 ADALinker is a Plugin for Joomla that searches all website content for the keyword 'ADA:', reads the pattern of the decision after the ADA and turns it into a link to that decision's page on Diavgeia.
 
-# Απαιτήσεις
+# Requirements
 ADALinker Plugin is fairly simple and will (hopefully) play nice with:
 - [x] Joomla 3.X
 - [x] Joomla 4.X
