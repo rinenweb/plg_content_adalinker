@@ -15,7 +15,15 @@
 
     <config>
         <fields name="params">
-            <!-- Add any plugin-specific configuration parameters here if needed -->
+            <fieldset name="basic">
+                <field
+                    name="link_class"
+                    type="text"
+                    label="Link Class"
+                    description="Προαιρετικά μπορείτε να συμπληρώσετε κάποια κλάση για τον σύνδεσμο"
+                    default=""
+                />
+	   </fieldset>
         </fields>
     </config>
 	<updateservers>
