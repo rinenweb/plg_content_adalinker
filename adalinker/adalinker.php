@@ -2,7 +2,7 @@
 /**
  * Content Plugin for Joomla! - ADALinker
  *
- * @author     rinenweb.eu <info@rinenweb.eu>
+ * @author     Ioannis Fytros <info@rinenweb.eu>
  * @license    GNU GPL v3 or later
  * @link       https://github.com/rinenweb/plg_content_adalinker
  */
@@ -15,6 +15,9 @@ class plgContentADALinker extends JPlugin
     {
         // Define the pattern for "ΑΔΑ: ..."
         $pattern = '/\bΑΔΑ: ([^\W_]+-?[^\W_]+)\b/iu';
+
+        // Get the link class from the plugin parameters
+        $linkClass = $this->params->get('link_class', '');
 
         // Get the content
         $content = $article->text;
@@ -29,7 +32,7 @@ class plgContentADALinker extends JPlugin
                 $url = 'https://diavgeia.gov.gr/decision/view/' . $ada;
 
                 // Construct the replacement string to preserve surrounding text
-                $replace = 'ΑΔΑ: <a href="' . $url . '" title="' . $ada . '" target="_blank">' . $ada . '</a>';
+                $replace = 'ΑΔΑ: <a href="' . $url . '" title="' . $ada . '" class="' . $linkClass . '" target="_blank">' . $ada . '</a>';
 
                 // Replace the matched pattern with the hyperlink
                 $content = preg_replace('/\bΑΔΑ: ' . preg_quote($ada, '/') . '\b/iu', $replace, $content, 1); // Added '1' as the fourth argument to limit the replacements to one occurrence
