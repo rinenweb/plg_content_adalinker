@@ -15,9 +15,10 @@ class plgContentADALinker extends JPlugin
     {
         // Define the pattern for "ΑΔΑ: ..."
         $pattern = '/\bΑΔΑ: ([^\W_]+-?[^\W_]+)\b/iu';
-
-        // Get the link class from the plugin parameters
+		
+		// Get the link class from the plugin parameters
         $linkClass = $this->params->get('link_class', '');
+		$urlType = $this->params->get('url_type', 'page');
 
         // Get the content
         $content = $article->text;
@@ -29,7 +30,7 @@ class plgContentADALinker extends JPlugin
             foreach ($matches[1] as $ada)
             {
                 // Define the URL with the ADA parameter
-                $url = 'https://diavgeia.gov.gr/decision/view/' . $ada;
+                $url = $this->createUrl($ada, $urlType);
 
                 // Construct the replacement string to preserve surrounding text
                 $replace = 'ΑΔΑ: <a href="' . $url . '" title="' . $ada . '" class="' . $linkClass . '" target="_blank">' . $ada . '</a>';
@@ -44,4 +45,17 @@ class plgContentADALinker extends JPlugin
 
         return true;
     }
+	private function createUrl($ada, $urlType)
+	{
+		$baseUrl = 'https://diavgeia.gov.gr/';
+		// Determine the URL based on the selected type
+		if ($urlType === 'file') {
+			// URL for viewing a file
+			$url = $baseUrl . 'doc/' . $ada . '?inline=true';
+		} else {
+			// Default URL for viewing a page in Diavgeia
+			$url = $baseUrl . 'decision/view/' . $ada;
+		}
+		return $url;
+	}
 }
