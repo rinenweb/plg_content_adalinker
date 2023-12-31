@@ -19,7 +19,7 @@
                 <field
                     name="link_class"
                     type="text"
-                    label="Link Class"
+                    label="Κλάση Συνδέσμου"
                     description="Προαιρετικά μπορείτε να συμπληρώσετε κάποια κλάση για τον σύνδεσμο"
                     default=""
                 />
