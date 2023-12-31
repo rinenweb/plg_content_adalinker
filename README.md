@@ -19,6 +19,11 @@
 
 **Προσοχή:** Το μοτίβο που αναζητείται είναι απόλυτα συγκεκριμένο, δηλ. "ΑΔΑ:" που ακολουθείται από κενό χαρακτήρα και τον αριθμό της πράξης. Μπορεί επίσης να είναι εντός παρένθεσης "(ΑΔΑ: Α1Β2Γ3Δ4-Ε5Ζ)". Οποιοσδήποτε άλλος τρόπος μπορεί να μην λειτουργήσει. Για παράδειγμα, αν στο κείμενο υπάρχει οποιαδήποτε διαφοροποίηση ως προς τη λέξη-κλειδί "ΑΔΑ:", όπως "ΑΔΑ" ή "Α.Δ.Α." κ.λπ., ο αριθμός απόφασης που ακολουθεί **δεν** θα διαβαστεί σωστά.
 
+## Ρυθμίσεις
+Από την έκδοση 1.1 εισάγονται δύο προαιρετικές ρυθμίσεις μέσα στο Plugin. Συγκεκριμένα:
++ **Κλάση Συνδέσμου:** Μπορείτε να συμπληρώσετε κάποια κλάση για τον σύνδεσμο προκειμένου να διευκολυνθείτε σε τυχόν περαιτέρω μορφοποίησή του ή σε επέκταση της λειτουργίας του. Για παράδειγμα, αν χρησιμοποιείτε το JCE MediaBox, μπορείτε στο εν λόγω πεδίο να βάλετε την κλάση "jcepopup" ώστε ο σύνδεσμος να ανοίγει σε αναδυόμενο παράθυρο.
++ **Τύπος Συνδέσμου:** Εδώ μπορείτε να επιλέξετε το πού θα οδηγεί ο σύνδεσμος. Η επιλογή **"Προβολή Σελίδας"** οδηγεί στη σελίδα της πράξης στη Δι@ύγεια (δηλαδή ο σύνδεσμος θα είναι της μορφής diavgeia.gov.gr/decision/view/**ΑΔΑ**. Η επιλογή **"Προβολή Αρχείου"** οδηγεί απ' ευθείας στην προβολή του αρχείου της πράξης στη Δι@ύγεια (δηλαδή ο σύνδεσμος θα είναι της μορφής diavgeia.gov.gr/doc/**ΑΔΑ**?inline=true). 
+
 # Άδεια χρήσης και αποποίηση ευθύνης
 Αυτό το πρόγραμμα, είναι ελεύθερο λογισμικό και διανέμεται υπό τους όρους της άδειας χρήσης GNU GPL 3. Πρέπει να έχετε λάβει ένα αντίγραφο της μαζί με αυτό το πρόγραμμα. Αν όχι μπορείτε να λάβετε ένα από τη διεύθυνση [https://www.gnu.org/licenses/gpl-3.0.txt](https://www.gnu.org/licenses/gpl-3.0.txt)
 
@@ -45,6 +50,11 @@ The Plugin is installed like any other extension. After installation, it needs t
 The Plugin searches all website content (i.e. text in Articles, Categories, Tags, etc.) for the keyword 'ADA:', reads the following decision pattern (eg A1B2C3D4-E5Z) and turns it into a link to the page of this decision in Diavgeia, i.e. to the url https://diavgeia.gov.gr/decision/view/Α1Β2Γ3Δ4-Ε5Ζ.
 
 **Caution:** The pattern searched for is very specific, i.e. "ΑΔΑ:" followed by a blank character and the decision number. It can also be in parentheses "(AD: A1B2C3D4-E5Z)". Any other way may not work. For example, if the text contains any variation on the keyword "ΑΔΑ:", such as "ADA" or "A.D.A." etc., the decision number that follows will **not** be read correctly.
+
+## Settings
+Since version 1.1, two optional settings are introduced into the Plugin. Specifically:
++ **Link Class:** You can fill in a class for the link in order to facilitate any further formatting or extension of its function. For example, if you use JCE MediaBox, you can put the class "jcepopup" in that field so that the link opens in a popup window.
++ **Link Type:** Here you can choose where the link will point to. The **"View Page"** option leads to the decision's page in Diavgeia (i.e. the link will be of the format diavgeia.gov.gr/decision/view/**ADA**. The **"View File"** option leads directly to inline viewing of the decision's file in Diavgeia (i.e. the link will be of the format diavgeia.gov.gr/doc/**ΑΡΑ**?inline=true).
 
 # License and Disclaimer
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. 
