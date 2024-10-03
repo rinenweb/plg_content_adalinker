@@ -3,7 +3,7 @@
 	<update>
 		<name>ADALinker</name>
 		<description>A Joomla plugin that searches content for ADA keyword and replaces the pattern of the decision with its link to Diavgeia</description>
-		<element>plg_adalinker</element>
+		<element>adalinker</element>
 		<type>plugin</type>
 		<version>1.1</version>
 		<client>administrator</client>
