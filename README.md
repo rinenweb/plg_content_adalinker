@@ -8,6 +8,7 @@
 - [x] Joomla 3.X
 - [x] Joomla 4.X
 - [x] Joomla 5.X
+- [x] Joomla 6.X
 - [x] PHP 7.0+
 - [x] PHP 8.0+
 
