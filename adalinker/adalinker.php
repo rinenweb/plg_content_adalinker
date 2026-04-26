@@ -9,7 +9,9 @@
 
 defined('_JEXEC') or die;
 
-class plgContentADALinker extends JPlugin
+use Joomla\CMS\Plugin\CMSPlugin;
+
+class plgContentADALinker extends CMSPlugin
 {
     public function onContentPrepare($context, &$article, &$params, $page = 0)
     {
